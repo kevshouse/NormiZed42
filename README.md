@@ -17,16 +17,26 @@ Save as setup_zed_project.sh
 
 Make executable:
 
-bash
-chmod +x setup_zed_project.sh
+```bash
+chmod +x new42_project.sh
+```
 Run with desired project name:
 
-bash
-./setup_zed_project.sh my_awesome_project
+```bash
+./new42_project.sh my_awesome_project
+
+```
 This ensures every new project starts with:
 🔥 Zed configured for 4-space indentation
 🔥 Auto-formatting on save
 🔥 80-character line enforcement
 🔥 Norm-compliant brace placement
 
-Pro Tip: Add this script to your ~/bin directory and add export PATH=$PATH:~/bin to your .zshrc/.bashrc for global access!
+Pro Tip: Add this script to your 
+```
+~/bin
+```
+directory and add 
+```
+export PATH=$PATH:~/bin to your .zshrc/.bashrc for global access!
+```
