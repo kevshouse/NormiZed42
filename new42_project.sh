@@ -25,13 +25,40 @@ AllowShortFunctionsOnASingleLine: false
 AlignAfterOpenBracket: Align
 SpaceBeforeParens: ControlStatements
 PointerAlignment: Left
-SpacesInParentheses: Never
+SpacesInParentheses: false
 EOL
 
 # Create Zed settings
 mkdir -p .zed
 cat > .zed/settings.json << 'EOL'
 {
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-thinking-latest"
+    },
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "show_edit_predictions": false,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
   "languages": {
     "C": {
       "tab_size": 4,
@@ -46,7 +73,8 @@ cat > .zed/settings.json << 'EOL'
     },
     "Makefile": {
       "tab_size": 4,
-      "hard_tabs": true
+      "formatter": "language_server",
+      "format_on_save": "on"
     }
   }
 }
