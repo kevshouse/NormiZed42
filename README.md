@@ -14,7 +14,7 @@ Auto-Created Files:
 *    Automatically installs norminette if missing
 
 Usage:
-Save as setup_zed_project.sh
+Save as new42_project.sh
 
 Make executable:
 
