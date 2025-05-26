@@ -3,8 +3,9 @@ One-Command Setup
 
 ```bash
 ./setup_zed_project.sh my_project
-Auto-Created Files:
 ```
+Auto-Created Files:
+
 *    Norm-compliant .clang-format
 *    Pre-configured Zed settings (.zed/settings.json)
 *    Sample C file with proper formatting
